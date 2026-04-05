@@ -1,4 +1,4 @@
-package section14.exception.customsExceptions.goodSolution.exceptions;
+package section14.customsExceptions.goodSolution.exceptions;
 
 public class DomainException extends Exception {
 

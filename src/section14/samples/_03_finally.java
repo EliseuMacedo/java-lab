@@ -1,4 +1,4 @@
-package section14.exception.samples;
+package section14.samples;
 
 import java.io.File;
 import java.io.IOException;

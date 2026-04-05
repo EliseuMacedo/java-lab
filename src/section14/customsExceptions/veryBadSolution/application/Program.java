@@ -1,6 +1,6 @@
-package section14.exception.customsExceptions.badSolution.application;
+package section14.customsExceptions.veryBadSolution.application;
 
-import section14.exception.customsExceptions.badSolution.entities.Reservation;
+import section14.customsExceptions.veryBadSolution.entities.Reservation;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -39,14 +39,15 @@ public class Program {
             System.out.print("Check-out date (dd/MM/yyyy): ");
             checkOut = sdf.parse(sc.nextLine());
 
-
-            String error = reservation.updateDates(checkIn, checkOut);
-            if (error != null) {
-                System.out.println(error);
+            // Date now = new Date(); use to validate now
+            if (checkIn.before(reservation.getCheckIn()) || checkOut.before(reservation.getCheckOut())) {
+                System.out.println("Error in reservation: Reservation dates for update must be future dates");
+            } else if (checkIn.after(checkOut)) {
+                System.out.println("Error in reservation: Check-out date must be after check-in date");
             } else {
+                reservation.updateDates(checkIn, checkOut);
                 System.out.println(reservation);
             }
-
         }
         sc.close();
 

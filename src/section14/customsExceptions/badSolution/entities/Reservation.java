@@ -1,4 +1,4 @@
-package section14.exception.customsExceptions.badSolution.entities;
+package section14.customsExceptions.badSolution.entities;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

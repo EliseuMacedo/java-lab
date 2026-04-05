@@ -1,7 +1,7 @@
-package section14.exception.customsExceptions.goodSolution.application;
+package section14.customsExceptions.goodSolution.application;
 
-import section14.exception.customsExceptions.goodSolution.entities.Reservation;
-import section14.exception.customsExceptions.goodSolution.exceptions.DomainException;
+import section14.customsExceptions.goodSolution.entities.Reservation;
+import section14.customsExceptions.goodSolution.exceptions.DomainException;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

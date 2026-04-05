@@ -1,6 +1,6 @@
-package section14.exception.customsExceptions.goodSolution.entities;
+package section14.customsExceptions.goodSolution.entities;
 
-import section14.exception.customsExceptions.goodSolution.exceptions.DomainException;
+import section14.customsExceptions.goodSolution.exceptions.DomainException;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
